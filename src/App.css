@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border:0;
+  outline: 0;
+  line-height: 1.2;
+  font-weight: 400;
+  vertical-align: middle;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #D2DBDC;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  display:flex;
+  height:100vh;
+  background-color: #EDEDED;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar{
+  width: 35%;
+  max-width: 415px;
   display: flex;
   flex-direction: column;
+  border-right: 1px solid #DDD;
+
+}
+
+header{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
+  
+}
+input{
+  border:0;
+}
+.avatar{
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+  
+}
+.btn{
+  display:flex;
+}
+.btn-a{
+  width:40px;
+  height:40px;
+  cursor: pointer;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.search{
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #EEE;
+  padding: 5px 15px;
+}
+.search-input{
+  background-color: #FFF;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius:20px;
+
+}
+.search-input input{
+  flex: 1;
+  outline: 0;
+  background-color:transparent;
+  margin-left: 10px;
+}
+.chatlist{
+  flex: 1; 
+  background-color: #fff;
+  overflow: auto;
+}
+.chatlist::-webkit-scrollbar{
+  width:6px;
+  height:6px;
+}
+.chatlist::-webkit-scrollbar-thumb{
+  background-color: rgba(0,0,0,0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.contentarea{
+ 
+  flex: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clear{
+  clear: both;
 }

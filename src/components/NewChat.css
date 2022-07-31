@@ -1,0 +1,73 @@
+.NewChat{
+    width:35%;
+    max-width: 415px;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #DDD;
+    transition:all ease 0.5s;
+}
+.NewChat-head{
+    display: flex;
+    background-color: #00BFA5;
+    align-items: center;
+    padding: 60px 15px 15px 15px;
+}
+.NewChat-back{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.NewChat-headtitle{
+    font-size:19px;
+    line-height: 40px;
+    height: 40px;
+    flex: 1;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 20px;
+
+}
+
+.NewChat-list{
+    flex: 1;
+    overflow-y: auto;
+   
+}
+.NewChat-list::-webkit-scrollbar{
+    width:6px;
+    height:6px;
+  }
+  .NewChat-list::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,0.2);
+  }
+  .NewChat-item{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+
+  }
+  .NewChat-item:hover{
+    background-color:#f5f5f5;
+  }
+  .Newchat-itemavatar{
+    width:40px;
+    height: 40px;
+    margin: 0px 15px 0 0;
+    border-radius:50%;
+    
+
+
+  }
+  NewChat-itemname{
+    font-size:17px;
+    color: #000;
+  }
